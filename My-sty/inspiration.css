@@ -1,0 +1,197 @@
+a {
+  text-decoration: none;
+}
+.w {
+  width: 1129px;
+  margin: 0 auto;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  background-color: #1c98b0;
+  padding-bottom: 30px;
+}
+.inspiration-wrapper {
+  height: 66px;
+  background-color: #1c98b0;
+}
+.inspiration-wrapper .inspiration-nav {
+  height: 100%;
+}
+.inspiration-wrapper .inspiration-nav .navflex {
+  display: flex;
+  justify-content: space-between;
+}
+.inspiration-wrapper .inspiration-nav .navflex li {
+  width: 100px;
+  height: 66px;
+}
+.inspiration-wrapper .inspiration-nav .navflex li a {
+  display: block;
+  line-height: 66px;
+  text-align: center;
+  color: #d8fffe;
+}
+.inspiration-wrapper .inspiration-nav .navflex li a:hover {
+  color: #b5f56c;
+}
+.middle-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+}
+.middle-wrapper .mainpicture-img {
+  width: 100%;
+  height: 635px;
+  position: relative;
+}
+.middle-wrapper .mainpicture-img img {
+  position: absolute;
+  width: 1129px;
+  vertical-align: top;
+}
+.middle-wrapper .mainpicture-img .Carousel {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(608px);
+}
+.middle-wrapper .mainpicture-img .Carousel a {
+  display: block;
+  width: 20px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+}
+.middle-wrapper .mainpicture-img .Carousel .a1,
+.middle-wrapper .mainpicture-img .Carousel a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 2px solid rgba(0, 0, 0, 0.5);
+}
+.middle-wrapper .content-inspiration .tit {
+  height: 122px;
+  text-align: center;
+  line-height: 122px;
+  color: #1c98b0;
+  font-size: 25px;
+  font-weight: bold;
+}
+.middle-wrapper .content-inspiration .introduce {
+  height: 358px;
+  display: flex;
+  justify-content: space-between;
+}
+.middle-wrapper .content-inspiration .introduce .left-no1 {
+  width: 200px;
+  height: 100%;
+  background-color: #1c98b0;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: 0.3s;
+}
+.middle-wrapper .content-inspiration .introduce .left-no1:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+.middle-wrapper .content-inspiration .introduce .left-no1 img {
+  width: 100%;
+  height: 338px;
+}
+.middle-wrapper .content-inspiration .introduce .pro-1 {
+  width: 293px;
+  height: 358px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.middle-wrapper .content-inspiration .introduce .pro-1:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+.middle-wrapper .content-inspiration .introduce .pro-1 img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.middle-wrapper .content-inspiration .introduce .pro-1 h2 {
+  color: #1c98b0;
+  font-weight: bold;
+  line-height: 24px;
+  padding-left: 5px;
+}
+.middle-wrapper .content-inspiration .introduce .pro-1 p {
+  padding-left: 5px;
+  font-size: 12px;
+  color: #a8a8a8;
+  word-spacing: 20px;
+  line-height: 1.4;
+}
+.return-wrapper {
+  height: 150px;
+  margin-top: 20px;
+}
+.return-wrapper .return-ins {
+  height: 150px;
+  background-color: #1c98b0;
+  position: relative;
+}
+.return-wrapper .return-ins .return-nnv {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: 434px;
+}
+.return-wrapper .return-ins .return-nnv a {
+  display: block;
+  text-align: center;
+  line-height: 100px;
+  color: #f8edac;
+  font-weight: bold;
+}
+.return-wrapper .return-ins .return1 {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  transform: rotateZ(22deg);
+  transform-origin: 22px 34px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.return-wrapper .return-ins .return1:hover {
+  transform: rotateZ(0);
+}
+.return-wrapper .return-ins .fg {
+  width: 1px;
+  height: 100px;
+  margin: 30px;
+}
+.return-wrapper .return-ins .return2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  border-radius: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transform: rotateZ(-30deg);
+  transform-origin: 30px 34px;
+  transition: 0.4s;
+}
+.return-wrapper .return-ins .return2:hover {
+  transform: rotateZ(0);
+}

@@ -1,0 +1,191 @@
+// body{
+//     background-color: #1c98b0;
+// }
+@prospect-color:#0066cc;
+a{
+    text-decoration: none;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.w{
+    width: 929px;
+    margin: 0 auto;
+}
+.external-wrapper{
+    width: 100%;
+    // background-color: rgba(72, 160, 145, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+// 设置工作室顶部导航
+.studio-Navigation{
+    height:116px;
+    // background-color: rgba(122, 122, 122, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px ;
+
+    // 设置工作室图标外围容器
+    .studio-img{
+        width: 150px;
+        height: 100px;
+        // background-color: tomato;
+        // 图片大小
+        img{
+            width: 150px;
+            height: 100px;
+        }
+    }
+
+    // 设置导航菜单
+    .Navigation-top{
+        width: 60px;
+        // height: 50px;
+        height: 116px;
+        // background-color: yellow;
+        position: relative;
+        margin-right: 50px;
+
+
+        // 图标横线
+        
+        .line{
+            width: 60px;
+            height: 2px;
+            background-color: @prospect-color;
+            position: absolute;
+            transform-origin: left;
+            transition: all .5s;
+        }
+        .line:nth-child(1){
+            top: 33px;
+        }
+        .line:nth-child(2){
+            top: 55px;
+        }
+        .line:nth-child(3){
+            top: 77px;
+        }
+
+        // 鼠标移入时的显示效果
+        &:hover{
+            .line:nth-child(1){
+                transform: translateY(1px) rotateZ(45deg);
+            }
+            .line:nth-child(2){
+                opacity: 0;
+            }
+            .line:nth-child(3){
+                transform: translateY(-1px) rotateZ(-45deg);
+            }
+        }
+
+        &:hover .last-li{
+            display: block;
+            // height: 258px;
+        }
+
+        // 设置下拉菜单
+        .last-li{
+            display: none;
+            // height: 0;
+            // position: absolute;
+            .drop-down{
+                width: 150px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 2px 2px 7px rgba(0, 0, 0, .3);
+                border-top-left-radius: 3px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 3px;
+                border-bottom-left-radius: 20px;
+                position: absolute;
+                top: 116px;
+                left: -45px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+
+                .word-li{
+                    width: 100%;
+                    height: 40px;
+                    // background-color: tomato;
+                    // margin-bottom: 5px;
+                    line-height: 40px;
+
+                    a{
+                        display: block;
+                        color: #0066cc;
+                        text-align: center;
+
+                        &:hover{
+                            color: #1c98b0;
+                        }
+                    }
+                }
+
+                // 设置分割线
+                .lint{
+                    width: 80%;
+                    height: 1px;
+                    background-color: rgba(255, 255, 255, .7);
+                    margin: 0 auto;
+                }
+            }
+            // .drop-down::after{
+            //     content: "";
+            //     display: none;
+            //     position: absolute;
+            //     width: 0;
+            //     height: 0;
+            //     border: 8px solid transparent;
+            //     border-top: none;
+            //     border-bottom: tomato;
+            //     top: 0;
+            //     bottom: 0;
+            //     right: 0;
+            //     margin: auto;
+            // }
+        }
+    }
+}
+
+.homepage-logo{
+    margin-top: 13px;
+    .logo-nav{
+        width: 626px;
+        height: 332px;
+        margin: 0 auto;
+    }
+}
+
+.btn-inside{
+    height: 150px;
+
+    .btn-a{
+        width: 300px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 25px;
+
+        a{
+            display: block;
+            text-align: center;
+            line-height: 100px;
+            color: rgb(60,57,56);
+            border-radius: 55px;
+            border: 5px solid rgb(60,57,56);
+            transition: .4s;
+
+            &:hover {
+                background-color: rgb(60,57,56);
+                border: 5px solid rgba(0, 0, 0, .3);
+                color: #fff;
+            }
+        }
+    }
+}
+    
